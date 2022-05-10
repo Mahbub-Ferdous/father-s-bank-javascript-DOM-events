@@ -18,6 +18,7 @@ body {
   --primary-color: #ffff;
   --heading-color: rgb(117, 115, 115);
   --btn-background: rgb(78, 66, 34);
+  --input-focus-bg: rgb(230, 184, 124);
 }
 /* Heading Start */
 .heading {
@@ -26,6 +27,7 @@ body {
   color: var(--heading-color);
   margin-bottom: 4rem;
 }
+/* account starts */
 .grid-cols-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,6 +36,7 @@ body {
   justify-content: space-around;
 }
 .center {
+  width: 60%;
   margin: 0px auto;
   border-radius: 0.6rem;
   padding: 5rem;
@@ -48,11 +51,24 @@ body {
 .color-yellow-100 {
   background-color: var(--balance-bg-color);
 }
+.center-text {
+  text-align: center;
+}
 .money-count {
   margin-top: 0.8rem;
   text-align: center;
 }
-/*  */
+/* account ends */
+/*withdraw and deposit input field starts  */
+.margin {
+  margin: 2rem 0;
+}
+.center2 {
+  margin: 0px auto;
+  border-radius: 0.6rem;
+  padding: 5rem;
+  color: var(--primary-color);
+}
 .grid-cols-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,4 +99,42 @@ body {
   font-size: 15px;
   cursor: pointer;
   color: #ffff;
+}
+.color-text {
+  color: black;
+  margin-bottom: 1rem;
+}
+.input-field {
+  width: 75%;
+  height: 1.8rem;
+  border: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.input-field:focus {
+  background-color: var(--input-focus-bg);
+  outline: none;
+}
+/*withdraw and deposit input field ends  */
+
+/* media queries for mobile devices */
+
+@media (max-width: 640px) {
+  .center {
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 0.6rem;
+    padding: 5rem;
+    color: var(--primary-color);
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 }

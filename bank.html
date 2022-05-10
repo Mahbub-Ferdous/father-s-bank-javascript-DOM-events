@@ -19,29 +19,47 @@
       <section>
         <div class="grid-cols-3">
           <div class="center color-blue-100">
-            <h2>Deposit</h2>
-            <h2 class="money-count">$<span>000</span></h2>
+            <h2 class="center-text">Deposit</h2>
+            <h2 class="money-count">$<span id="deposit-count">000</span></h2>
           </div>
           <div class="center color-green-100">
-            <h2>Withdraw</h2>
-            <h2 class="money-count">$<span>000</span></h2>
+            <h2 class="center-text">Withdraw</h2>
+            <h2 class="money-count">$<span id="withdraw-count">000</span></h2>
           </div>
           <div class="center color-yellow-100">
-            <h2>Balance</h2>
-            <h2 class="money-count">$<span>000</span></h2>
+            <h2 class="center-text">Balance</h2>
+            <h2 class="money-count">$<span id="balance-count">1000</span></h2>
           </div>
         </div>
       </section>
       <!-- deposit and withdraw input starts -->
-      <section>
+      <section class="margin">
         <div class="grid-cols-2">
-          <div class="center d-flex bg-pink">
-            <input type="text" name="" id="" />
-            <button class="btn-deposit-withdraw">Deposit</button>
+          <div class="center2 d-flex bg-pink">
+            <h3 class="color-text">Please Deposit:</h3>
+            <input
+              class="input-field"
+              type="text"
+              name=""
+              id="deposit-field"
+              placeholder="deposit amount"
+            />
+            <button id="deposit-button" class="btn-deposit-withdraw">
+              Deposit
+            </button>
           </div>
-          <div class="center d-flex bg-red">
-            <input type="text" name="" id="" />
-            <button class="btn-deposit-withdraw">Deposit</button>
+          <div class="center2 d-flex bg-red">
+            <h3 class="color-text">Please Withdraw:</h3>
+            <input
+              class="input-field"
+              type="text"
+              name=""
+              id="withdraw-field"
+              placeholder="withdraw amount"
+            />
+            <button id="withdraw-button" class="btn-deposit-withdraw">
+              Withdraw
+            </button>
           </div>
         </div>
       </section>
