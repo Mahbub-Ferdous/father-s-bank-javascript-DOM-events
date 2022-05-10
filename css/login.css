@@ -1,0 +1,90 @@
+/* Common Utilities */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+/* Custom-Css-property */
+:root {
+  --heading-color: rgb(117, 115, 115);
+  --bankName-color: rgb(179, 3, 179);
+  --loginForm-bgColor: darkcyan;
+  --primary-color: #ffff;
+  --input-focus-bg: rgb(230, 184, 124);
+  --login-bg-btn: rgb(248, 203, 88);
+}
+/* Heading Start */
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 4rem;
+}
+.bank-name-color {
+  color: var(--bankName-color);
+}
+/* Heading Ends */
+/* Login Form starts */
+.login-section {
+  background-color: var(--loginForm-bgColor);
+  width: 40%;
+  margin: auto;
+  padding: 4rem;
+}
+.text-color {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form-div-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-field {
+  width: 75%;
+  height: 1.8rem;
+  border: 0.5rem;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.input-field:focus {
+  background-color: var(--input-focus-bg);
+  outline: none;
+}
+.btn-log-in {
+  background-color: var(--login-bg-btn);
+  width: 25%;
+  height: 1.8rem;
+  border: none;
+  border-radius: 13px;
+  color: rgb(70, 67, 67);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* Login Form ends */
+
+@media (max-width: 640px) {
+  .login-section {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+  }
+  .input-field {
+    width: 75%;
+    height: 1rem;
+    padding: 0 4px;
+    font-size: 10px;
+  }
+}

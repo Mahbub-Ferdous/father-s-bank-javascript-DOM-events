@@ -1,0 +1,86 @@
+/* Common Utilities */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+/* Custom-Css-property */
+:root {
+  --deposit-bg-color: rgb(85, 85, 253);
+  --withdraw-bg-color: rgb(72, 179, 72);
+  --balance-bg-color: rgb(179, 179, 24);
+  --primary-color: #ffff;
+  --heading-color: rgb(117, 115, 115);
+  --btn-background: rgb(78, 66, 34);
+}
+/* Heading Start */
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 4rem;
+}
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  gap: 5px;
+  justify-content: space-around;
+}
+.center {
+  margin: 0px auto;
+  border-radius: 0.6rem;
+  padding: 5rem;
+  color: var(--primary-color);
+}
+.color-blue-100 {
+  background-color: var(--deposit-bg-color);
+}
+.color-green-100 {
+  background-color: var(--withdraw-bg-color);
+}
+.color-yellow-100 {
+  background-color: var(--balance-bg-color);
+}
+.money-count {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+/*  */
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  gap: 5px;
+  justify-content: space-around;
+}
+.bg-pink {
+  background-color: rgb(250, 186, 197);
+}
+.bg-red {
+  background-color: rgb(245, 103, 103);
+}
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-deposit-withdraw {
+  background-color: var(--btn-background);
+  width: 75%;
+  height: 1.8rem;
+  border: none;
+  border-radius: 37px;
+  color: rgb(70, 67, 67);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffff;
+}
